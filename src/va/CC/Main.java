@@ -7,8 +7,9 @@ public class Main {
     public static void main(String[] args) {
 
         Engine engine1 = new Engine(385, GAS, 10.6, 0);
+        Tank tank1 = new Tank(75, 75);
         Manufacturer porsche = new Manufacturer("Porsche", 12.5);
-        Car car1 = new Car("Red", "911", 293, 126712, porsche, engine1, 0);
+        Car car1 = new Car("Red", "911", 293, 126712, porsche, engine1, 0, tank1);
 
         car1.printCar();
         System.out.println("Car price with manufacturer discount: EUR " + car1.preiceAfterManufacturerDisccount());

@@ -8,8 +8,8 @@ public class Car {
     public Tank tank;
 
     String model;
-    private Manufacturer manufacturer;
-    private Engine engine;
+    public Manufacturer manufacturer;
+    public Engine engine;
 
     public Car(String colour, String model, int maxSpeed, double basicPreis, Manufacturer manufacturer, Engine engine, double carMileage, Tank tank) {
         this.colour = colour;
@@ -20,6 +20,9 @@ public class Car {
         this.model = model;
         this.carMileage = carMileage;
         this.tank = tank;
+    }
+
+    public Car(String red, String model, int maxSpeed, int basicPreis, String porsche, Engine engine1, int carMileage, Tank tank1) {
     }
 
     public void printCar() {
@@ -49,8 +52,8 @@ public class Car {
         } else {
             tank.fuelQuantity = tank.fuelQuantity - driveConsumption;
         }
-        System.out.println("\nIm driving... " + mile + " KM" + "\nCar mileage: " + carMileage + "\nMotor mileage: " + engine.engineMileage + "\nFuel consumption: " + driveConsumption + "\nFuel consumption per 100/KM: " + engine.fuelConsumption + "\nFuel left: " + Math.round(tank.fuelQuantity));
-        System.out.println("Fill ups: " + fillUps);
+        System.out.println("\nIm driving... " + mile + " KM" + "\nCar mileage: " + carMileage + "\nMotor mileage: " + engine.engineMileage + "\nFuel consumption: " + driveConsumption + "\nFuel consumption per 100/KM: " + engine.fuelConsumption);
+        System.out.println("Fill ups: " + fillUps+"\n");
     }
 
 

@@ -28,5 +28,4 @@ public class Truck extends Car {
         System.out.println("\nDriving a truck");
         super.drive(mile);
     }
-
 }

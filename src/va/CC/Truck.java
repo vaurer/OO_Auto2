@@ -22,4 +22,11 @@ public class Truck extends Car {
         System.out.println("\nIm a " + manufacturer.getManufacturer() + " truck, model: " + this.model + " and can pull " + this.tonnage+" ton");
         System.out.println("\nI cost only "+ this.preiceAfterManufacturerDisccount()+" after discount");
     }
+
+    @Override
+    public void drive(double mile) {
+        System.out.println("\nDriving a truck");
+        super.drive(mile);
+    }
+
 }

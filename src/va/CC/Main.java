@@ -24,5 +24,6 @@ public class Main {
         truck1.printCar();
         System.out.println( truck1.engine.getHorsePower());
         truck1.printTruck();
+        truck1.drive(500);
     }
 }
